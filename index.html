@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .service-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .service-button:hover {
+            background-color: #0056b3;
+        }
+        .content {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+    </style>
+    <script>
+        function showContent(id) {
+            document.querySelectorAll('.content').forEach(div => div.style.display = 'none');
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <h1>Mobile Care Price Lists</h1>
+    <div class="button-container">
+        <button class="service-button" onclick="showContent('service-labor')">Service Labor</button>
+        <button class="service-button" onclick="showContent('iphone')">iPhone</button>
+        <button class="service-button" onclick="showContent('watch')">Watch</button>
+        <button class="service-button" onclick="showContent('airpods')">Airpods</button>
+        <button class="service-button" onclick="showContent('pencil')">Pencil</button>
+        <button class="service-button" onclick="showContent('ipad')">iPad</button>
+        <button class="service-button" onclick="showContent('portable')">Portable</button>
+    </div>
+
+    <div id="service-labor" class="content">
+        <h2>Service Labor</h2>
+        <table>
+            <tr><th>Service</th><th>iPhone</th><th>MacBook</th><th>Desktop</th><th>Accs</th><th>Watch</th><th>iPad</th></tr>
+            <tr><td>Diagnostic</td><td>2000</td><td>2500</td><td>3000</td><td>600</td><td>1000</td><td>1500</td></tr>
+            <tr><td>Software Fix</td><td>800</td><td>2000</td><td>3000</td><td>N/A</td><td>800</td><td>800</td></tr>
+            <tr><td>Non-Service Repair</td><td>1500</td><td>3000</td><td>3000</td><td>N/A</td><td>1000</td><td>1500</td></tr>
+        </table>
+    </div>
+
+    <div id="iphone" class="content">
+        <h2>iPhone Repairs</h2>
+        <table>
+            <tr><th>Model</th><th>Display</th><th>Rear Camera</th><th>TrueDepth</th><th>Battery</th><th>Top Speaker</th><th>Bottom Speaker</th><th>Taptic Engine</th><th>Back Glass</th><th>Whole Unit</th>
+            <tr><td>iPhone 7</td><td>10160</td><td>4720</td><td>N/A</td><td>2880</td><td>N/A</td><td>5360</td><td>6720</td><td>N/A</td><td>23760</td></tr>
+            <tr><td>iPhone 7 PLUS</td><td>10160</td><td>4720</td><td>N/A</td><td>2880</td><td>N/A</td><td>5360</td><td>6720</td><td>N/A</td><td>23760</td></tr>
+            <tr><td>iPhone 8</td><td>10160</td><td>4720</td><td>N/A</td><td>2880</td><td>N/A</td><td>N/A</td><td>5360</td><td>N/A</td><td>26000</td></tr>
+            <tr><td>iPhone 8 PLUS</td><td>11520</td><td>5920</td><td>N/A</td><td>2880</td><td>N/A</td><td>5360</td><td>5360</td><td>N/A</td><td>29680</td></tr>
+            <tr><td>iPhone SE 2nd</td><td>8800</td><td>4720</td><td>N/A</td><td>2880</td><td>N/A</td><td>5360</td><td>5360</td><td>N/A</td><td>20000</td></tr>
+            <tr><td>iPhone SE 3RD</td><td>8800</td><td>4720</td><td>N/A</td><td>2880</td><td>N/A</td><td>5360</td><td>5360</td><td>N/A</td><td>22240</td></tr>
+            <tr><td>iPhone XS</td><td>18720</td><td>5920</td><td>10160</td><td>3680</td><td>N/A</td><td>5360</td><td>5360</td><td>N/A</td><td>41760</td></tr>
+            <tr><td>iPhone XR</td><td>13520</td><td>5920</td><td>10160</td><td>3680</td><td>N/A</td><td>5360</td><td>5360</td><td>N/A</td><td>29680</td></tr>
+            <tr><td>iPhone 11</td><td>13520</td><td>5920</td><td>10160</td><td>3680</td><td>N/A</td><td>5360</td><td>5360</td><td>N/A</td><td>29680</td></tr>
+            <tr><td>iPhone 11 PRO</td><td>18720</td><td>5920</td><td>10160</td><td>3680</td><td>N/A</td><td>5360</td><td>5360</td><td>N/A</td><td>41760</td></tr>
+            <tr><td>iPhone 11 PRO MAX</td><td>22080</td><td>7760</td><td>10160</td><td>3680</td><td>N/A</td><td>5360</td><td>5360</td><td>N/A</td><td>45520</td></tr>
+            <tr><td>iPhone 12</td><td>18720</td><td>10240</td><td>10160</td><td>3680</td><td>N/A</td><td>5360</td><td>5360</td><td>N/A</td><td>34160</td></tr>
+            <tr><td>iPhone 12 MINI</td><td>15360</td><td>10240</td><td>10160</td><td>3680</td><td>N/A</td><td>5360</td><td>5360</td><td>N/A</td><td>29680</td></tr>
+            <tr><td>iPhone 12 PRO</td><td>18720</td><td>12080</td><td>10160</td><td>3680</td><td>N/A</td><td>5360</td><td>5360</td><td>N/A</td><td>41760</td></tr>
+            <tr><td>iPhone 12 PRO MAX</td><td>22080</td><td>12080</td><td>10160</td><td>3680</td><td>N/A</td><td>5360</td><td>5360</td><td>N/A</td><td>45520</td></tr>
+            <tr><td>iPhone 13</td><td>18720</td><td>10240</td><td>14960</td><td>3680</td><td>5360</td><td>5360</td><td>5360</td><td>N/A</td><td>34160</td></tr>
+            <tr><td>iPhone 13 MINI</td><td>15360</td><td>10240</td><td>13760</td><td>3680</td><td>5360</td><td>5360</td><td>5360</td><td>N/A</td><td>29680</td></tr>
+            <tr><td>iPhone 13 PRO</td><td>18720</td><td>12080</td><td>14960</td><td>3680</td><td>6160</td><td>5360</td><td>5360</td><td>N/A</td><td>41760</td></tr>
+            <tr><td>iPhone 13 PRO MAX</td><td>22080</td><td>12080</td><td>14960</td><td>3680</td><td>6160</td><td>5360</td><td>5360</td><td>N/A</td><td>45520</td></tr>
+            <tr><td>iPhone 14</td><td>18720</td><td>10240</td><td>14960</td><td>4080</td><td>5360</td><td>5360</td><td>5360</td><td>10240</td><td>41760</td></tr>
+            <tr><td>iPhone 14 PLUS</td><td>22080</td><td>10240</td><td>14960</td><td>4080</td><td>5360</td><td>5360</td><td>5360</td><td>12080</td><td>45520</td></tr>
+            <tr><td>iPhone 14 PRO</td><td>22080</td><td>13280</td><td>14960</td><td>4080</td><td>6160</td><td>5360</td><td>5360</td><td>N/A</td><td>49360</td></tr>
+            <tr><td>iPhone 14 PRO MAX</td><td>25440</td><td>13280</td><td>14960</td><td>4080</td><td>6160</td><td>5360</td><td>5360</td><td>N/A</td><td>53120</td></tr>
+            <tr><td>iPhone 15</td><td>19680</td><td>10240</td><td>14960</td><td>4080</td><td>5360</td><td>5360</td><td>5360</td><td>10240</td><td>41760</td></tr>
+            <tr><td>iPhone 15 PLUS</td><td>23200</td><td>10240</td><td>14960</td><td>4080</td><td>5360</td><td>5360</td><td>5360</td><td>12080</td><td>45520</td></tr>
+            <tr><td>iPhone 15 PRO</td><td>23200</td><td>13280</td><td>14160</td><td>4080</td><td>6160</td><td>5360</td><td>5360</td><td>10240</td><td>49360</td></tr>
+            <tr><td>iPhone 15 PRO MAX</td><td>26720</td><td>15120</td><td>14960</td><td>4080</td><td>6160</td><td>5360</td><td>5360</td><td>12080</td><td>53120</td></tr>
+            <tr><td>iPhone 16</td><td>21200</td><td>10240</td><td>14960</td><td>4080</td><td>5360</td><td>5360</td><td>5360</td><td>10240</td><td>41760</td></tr>
+            <tr><td>iPhone 16 PLUS</td><td>25040</td><td>10240</td><td>14960</td><td>4080</td><td>5360</td><td>5360</td><td>5360</td><td>12080</td><td>45520</td></tr>
+            <tr><td>iPhone 16 PRO</td><td>25040</td><td>15120</td><td>14960</td><td>4960</td><td>6160</td><td>5360</td><td>5360</td><td>10240</td><td>49360</td></tr>
+            <tr><td>iPhone 16 PRO MAX</td><td>28800</td><td>15120</td><td>14960</td><td>4960</td><td>6160</td><td>5360</td><td>5360</td><td>12080</td><td>56960</td></tr>
+            
+        </table>
+    </div>
+
+    <div id="watch" class="content">
+        <h2>Watch Repairs</h2>
+        <table>
+            <tr><th>Model</th><th>GPS</th><th>Cellular</th></tr>
+            <tr><td>Watch Series 3</td><td>11480</td><td>N/A</td></tr>
+            <tr><td>Watch Series 4</td><td>22240</td><td>26000</td></tr>
+            <tr><td>Watch Series 5</td><td>22240</td><td>26000</td></tr>
+            <tr><td>Watch SE</td><td>16320</td><td>16320</td></tr>
+            <tr><td>Watch Series 6</td><td>22240</td><td>26000</td></tr>
+            <tr><td>Watch Series 7</td><td>22240</td><td>26000</td></tr>
+            <tr><td>Watch Series SE (2ND GEN)</td><td>14800</td><td>17040</td></tr>
+            <tr><td>Watch Ultra</td><td>37120</td><td>N/A</td></tr>
+            <tr><td>Watch Series 9</td><td>22240</td><td>26000</td></tr>
+            <tr><td>Watch Ultra 2</td><td>37120</td><td>N/A</td></tr>
+            <tr><td>Watch Series 10</td><td>22240</td><td>26000</td></tr>
+        </table>
+    </div>
+
+    <div id="airpods" class="content">
+        <h2>AirPods Repairs</h2>
+        <table>
+            <tr><th>Model</th><th>Left</th><th>Right</th><th>Case</th></tr>
+            <tr><td>AirPods 2nd Gen</td><td>4960</td><td>4960</td><td>4240</td></tr>
+            <tr><td>AirPods 3rd Gen</td><td>4960</td><td>4960</td><td>4240</td></tr>
+            <tr><td>AirPods Pro</td><td>6400</td><td>6400</td><td>6400</td></tr>
+            <tr><td>AirPods Pro 2nd Gen</td><td>6400</td><td>6400</td><td>6400</td></tr>
+            <tr><td>AirPods 4/4 with ANC</td><td>4960</td><td>4960</td><td>4240</td></tr>
+          
+            <tr><th>Model</th><th>Left Cushion</th><th>Right Cushion</th><th>Whole Unit</th></tr>
+            <tr><td>AirPods 2nd Gen</td><td>2800</td><td>2800</td><td>39520</td></tr>
+            
+        </table>
+    </div>
+
+    <div id="pencil" class="content">
+        <h2>Apple Pencil</h2>
+        <table>
+            <tr><th>Model</th><th>Price</th></tr>
+            <tr><td>Apple Pencil (1st Gen)</td><td>5680</td></tr>
+            <tr><td>Apple Pencil (2nd Gen)</td><td>7840</td></tr>
+            <tr><td>Apple Pencil (USB-C)</td><td>4960</td></tr>
+            <tr><td>Apple Pencil Pro</td><td>7840</td></tr>
+        </table>
+    </div>
+
+    <div id="ipad" class="content">
+        <h2>iPad</h2>
+        <table>
+            <tr><th>Model</th><th>Replacement</th></tr>
+            <tr><td>iPad 7th Gen</td><td>18960</td></tr>
+            <tr><td>iPad 8th Gen</td><td>18960</td></tr>
+            <tr><td>iPad 9th Gen</td><td>18960</td></tr>
+            <tr><td>iPad 10th Gen</td><td>24240</td></tr>
+            <tr><td>iPad Air 3rd Gen</td><td>28000</td></tr>
+            <tr><td>iPad Air 4th Gen</td><td>31840</td></tr>
+            <tr><td>iPad Air 5th Gen</td><td>31840</td></tr>
+            <tr><td>iPad Air 6th Gen/iPad Air 11-inch (M2)</td><td>34160</td></tr>
+            <tr><td>iPad Mini 5th Gen</td><td>22720</td></tr>
+            <tr><td>iPad Mini 6th Gen</td><td>26560</td></tr>
+            <tr><td>iPad Mini 7th Gen/iPad Mini (A17 Pro)</td><td>26560</td></tr>
+            <tr><td>iPad Pro 11-inch 1st Gen</td><td>37920</td></tr>
+            <tr><td>iPad Pro 11-inch 2nd Gen</td><td>37920</td></tr>
+            <tr><td>iPad Pro 11-inch 3rd Gen</td><td>41760</td></tr>
+            <tr><td>iPad Pro 11-inch 4th Gen</td><td>41760</td></tr>
+            <tr><td>iPad Pro 12.9-inch 3rd Gen</td><td>49360</td></tr>
+            <tr><td>iPad Pro 12.9-inch 4th Gen</td><td>49360</td></tr>
+            <tr><td>iPad Pro 12.9-inch 5th Gen</td><td>56960</td></tr>
+            <tr><td>iPad Pro 12.9-inch 6th Gen</td><td>56960</td></tr>
+        </table>
+    </div>
+    
+     <div id="portable" class="content">
+        <h2>Macbook</h2>
+        <table>
+            <tr><th>Model</th><th>Display</th><th>Top Case</th><th>Battery</th></tr>
+            <tr><td>Macbook Air (Retina, 13-inch,2019)</td><td>24560</td><td>17520</td><td>9520</td></tr>
+            <tr><td>Macbook Air (Retina, 13-inch,2020)</td><td>24560</td><td>17520</td><td>9520</td></tr>
+            <tr><td>Macbook Air (M1, 13.3-inch)</td><td>24560</td><td>17520</td><td>9520</td></tr>
+            <tr><td>Macbook Air (M2, 13.6-inch)</td><td>31600</td><td>26000</td><td>9520</td></tr>
+            <tr><td>Macbook Air (M2, 15.3-inch)</td><td>42160</td><td>37280</td><td>13760</td></tr>
+            <tr><td>Macbook Air (M3, 13.6-inch, 15.3-inch)</td><td>31600</td><td>26000</td><td>9520</td></tr>
+            <tr><td>Macbook Pro (13-inch)</td><td>35120</td><td>35120</td><td>14960</td></tr>
+            <tr><td>Macbook Pro (14-inch)</td><td>45860</td><td>35120</td><td>14960</td></tr>
+            <tr><td>Macbook Pro (16-inch)</td><td>42160</td><td>42160</td><td>14960</td></tr>
+
+        </table>
+    </div>
+</body>
+</html>
